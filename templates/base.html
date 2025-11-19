@@ -1,0 +1,158 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link rel="shortcut icon" href="Icon.png" type="image/x-icon">
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,100;0,200;0,300;0,400;0,500;0,600;0,700;0,800;0,900;1,100;1,200;1,300;1,400;1,500;1,600;1,700;1,800;1,900&display=swap" rel="stylesheet">
+    <title>
+        {% if pagina == 'index' %}
+            Web Crawler de Notícias
+        {% elif pagina == 'noticias' %}
+            Últimas Notícias - Web Crawler
+        {% elif pagina == 'erro' %}
+            Erro - Web Crawler
+        {% else %}
+            Web Crawler de Notícias
+        {% endif %}
+    </title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <header id="titulo-principal" role="banner">
+        <div class="branding">
+            <h1><a href="{{ url_for('index') }}" class="titulo-link">TACTIC EYE</a></h1>
+        </div>
+        <nav role="navigation" aria-label="Menu principal">
+            <ul>
+                <li><a href="{{ url_for('noticias') }}">Notícias</a></li>
+                <li><a href="{{ url_for('campeonatos') }}">Campeonatos</a></li>
+            </ul>
+        </nav>
+    </header>
+    {% block content %}
+    {% if pagina == 'index' %}
+            <h2>Destaques</h2>
+        {% if destaques %}
+            <div class="destaques">
+                        {% for d in destaques %}
+                                <div class="destaque">
+                                        <h3><a href="{{ url_for('ver_noticia') }}?url={{ d.link_encoded }}">{{ d.titulo }}</a></h3>
+                                        {% if d.imagem_principal %}
+                                                <img src="{{ d.imagem_principal }}" alt="{{ d.titulo }}" class="imagem-destaque" />
+                                        {% endif %}
+                                        {% set resumo_curto = d.resumo_curto[:150] if d.resumo_curto else '' %}
+                                        {% if resumo_curto %}
+                                            <p class="resumo">{{ resumo_curto }}{% if resumo_curto|length >= 150 %}...{% endif %}
+                                                {% if d.subitens %}
+                                                    <ul>
+                                                        {% for sub in d.subitens %}
+                                                            <li>{{ sub }}</li>
+                                                        {% endfor %}
+                                                    </ul>
+                                                {% endif %}
+                                            </p>
+                                        {% endif %}
+                                        <a href="{{ url_for('ver_noticia') }}?url={{ d.link_encoded }}" class="button">Ler mais</a>
+                                </div>
+                        {% endfor %}
+            </div>
+        {% else %}
+            <p>Sem destaques no momento.</p>
+        {% endif %}
+       
+
+    {% elif pagina == 'noticias' %}
+        <h1>Últimas Notícias</h1>
+        
+        <!-- Botão para atualizar notícias -->
+        <div class="atualizar-noticias">
+            <form action="{{ url_for('api_crawl') }}" method="POST" id="formBuscar">
+                <input type="hidden" name="max_noticias" value="10">
+                <button type="submit" class="button button-green" id="btnBuscar">
+                    Buscar Novas Notícias
+                </button>
+            </form>
+            <div id="loading" style="display: none;">
+                Buscando mais notícias em segundo plano...
+                <div class="loading-spinner"></div>
+            </div>
+        </div>
+        
+        {# script e estilo de loading movidos para arquivos estáticos (static/css/style.css e static/js/main.js) #}
+
+        {% if mensagem %}
+            <div class="mensagem">
+                {{ mensagem }}
+            </div>
+        {% endif %}
+
+        {% if noticias %}
+            <div class="noticias-grid">
+                {% for noticia in noticias %}
+                    {% include 'components/noticia_item.html' %}
+                {% endfor %}
+            </div>
+            
+            {% if meta %}
+            <div class="pagination">
+                {% if meta.page > 1 %}
+                    <a href="{{ url_for('noticias') }}?page={{ meta.page - 1 }}">
+                        Anterior
+                    </a>
+                {% endif %}
+                
+                <span>
+                    Página {{ meta.page }} de {{ meta.pages }}
+                </span>
+                
+                {% if meta.page < meta.pages %}
+                    <a href="{{ url_for('noticias') }}?page={{ meta.page + 1 }}">
+                        Próxima
+                    </a>
+                {% endif %}
+            </div>
+            {% endif %}
+        {% else %}
+            <p class="mensagem-alerta">
+                Nenhuma notícia encontrada. Use o botão acima para buscar novas notícias.
+            </p>
+        {% endif %}
+        {% if meta %}
+            <div class="pagination">
+                {% if meta.page > 1 %}
+                    <a href="{{ url_for('noticias') }}?page={{ meta.page - 1 }}" class="button">Anterior</a>
+                {% endif %}
+                <span> Página {{ meta.page }} de {{ meta.pages }} </span>
+                {% if meta.page < meta.pages %}
+                    <a href="{{ url_for('noticias') }}?page={{ meta.page + 1 }}" class="button">Próxima</a>
+                {% endif %}
+            </div>
+        {% endif %}
+
+    {% elif pagina == 'erro' %}
+        <h1>Erro ao buscar notícias</h1>
+        <p>Ocorreu um erro ao tentar buscar as notícias: {{ erro }}</p>
+        <a href="{{ url_for('index') }}" class="voltar">Voltar para o início</a>
+    {% elif pagina == 'ver' %}
+        {% if artigo %}
+            
+            <h1>{{ artigo.titulo }}</h1>
+           
+            {% if artigo.imagem_principal %}
+                <img src="{{ artigo.imagem_principal }}" alt="{{ artigo.titulo }}" class="imagem-artigo" />
+            {% endif %}
+            {# Melhor conversão de quebras de linha: duplas quebra em parágrafo, simples vira <br> #}
+            {% if artigo.texto %}
+                {% set t = artigo.texto.replace('\r\n', '\n').replace('\n\n', '</p><p>').replace('\n', '<br>') %}
+                <div class="texto-reescrito"><p>{{ t | safe }}</p></div>
+            {% else %}
+                <div class="texto-reescrito">Conteúdo não disponível.</div>
+            {% endif %}
+        {% else %}
+            <p>Artigo não encontrado.</p>
+        {% endif %}
+    {% endif %}
+    {% endblock %}
+</body>
+</html>

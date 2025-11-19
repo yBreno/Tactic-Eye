@@ -1,0 +1,565 @@
+/* Link do título principal */
+#titulo-principal h1 a.titulo-link {
+  text-decoration: none;
+  color: inherit;
+}
+
+#titulo-principal h1 a.titulo-link:hover {
+  opacity: 0.8;
+}
+
+* { box-sizing: border-box; }
+html, body { height: 100%; }
+body {
+  font-family: 'Poppins', system-ui, -apple-system, 'Segoe UI', Roboto, 'Helvetica Neue', Arial, sans-serif;
+  margin: 0;
+  padding: 0;
+  background-color: #f8f8f8;
+  color: #333;
+  -webkit-font-smoothing: antialiased;
+  line-height: 1.6;
+}
+
+/* Cabeçalho / Título principal usado em todas as páginas */
+#titulo-principal {
+  background: #ffffff;
+  border-bottom: 1px solid #e5e7eb;
+  padding: 14px 28px;
+  display: flex;
+  align-items: center;
+  justify-content: space-between;
+  gap: 20px;
+  position: sticky;
+  top: 0;
+  z-index: 1000;
+  height: 68px;
+}
+
+#titulo-principal h1 {
+  font-size: 1.4rem;
+  margin: 0;
+  color: #1f2937;
+  font-weight: 700;
+}
+
+#titulo-principal ul {
+  display: flex;
+  gap: 26px;
+  margin: 0;
+  padding: 0;
+  list-style: none;
+  align-items: center;
+}
+
+#titulo-principal ul a {
+  text-decoration: none;
+  color: #3b3b3b;
+  font-weight: 500;
+  font-size: 0.95rem;
+  padding-bottom: 4px;
+  border-bottom: 2px solid transparent;
+  transition: 0.2s;
+}
+
+#titulo-principal ul a:hover {
+ border-bottom: 2px solid #007bff;
+  color: #007bff;
+}
+
+/* Pequeno ajuste para o link li dentro do header quando houver <a><li></li></a> */
+#titulo-principal ul a li {
+  list-style: none;
+}
+
+/* Conteúdo principal */
+.container {
+  max-width: 400px;
+  margin: 40px auto;
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px 16px;
+}
+
+/* Estilo dos destaques */
+.destaques {
+  max-width: 1000px;
+  padding: 10px 20px;
+  display: flex;
+  flex-direction: column;
+  gap: 25px;
+}
+
+.destaque {
+  background: #fff;
+  border-radius: 8px;
+  padding: 40px;
+  box-shadow: 0 1px 3px rgba(0,0,0,0.05);
+  transition: all 0.3s ease;
+  display: grid;
+  grid-template-columns: 500px 5fr;
+  gap: 45px;
+  align-items: center;
+}
+
+.destaque:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 15px rgba(0,0,0,0.08);
+}
+
+.destaque h3 {
+  margin: 0 0 10px 0;
+  font-size: 2.0rem;
+  line-height: 1.3;
+  font-weight: 650;
+}
+
+.destaque h3 a {
+  color: #093eeccc;
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.destaque h3 a:hover {
+  color: #093dcc;
+  text-decoration: none;
+}
+
+.destaque p {
+  color: #666;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 8px 0;
+  font-weight: 400;
+}
+.resumo {
+  color: #6b6b6b;
+  font-size: 0.95rem;
+  line-height: 1.5;
+  margin: 6px 0 0 0;
+  font-weight: 400;
+  display: -webkit-box;
+  -webkit-line-clamp: 2;
+  line-clamp: 2;
+  -webkit-box-orient: vertical;
+  overflow: hidden;
+  text-overflow: ellipsis;
+  min-height: 2.9em;
+}
+.resumo ul {
+  margin: 4px 0 0 18px;
+  padding: 0;
+  color: #6b6b6b;
+  font-size: 0.93rem;
+  list-style: disc inside;
+}
+.destaque img {
+  width: 50%;
+  height: 190px;
+  border-radius: 6px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.destaque img:hover {
+  transform: scale(1.02);
+}
+
+/* Responsividade para destaques */
+@media (max-width: 768px) {
+  .destaque {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .destaque img {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+/* Grid de notícias */
+.noticias-grid {
+  max-width: 1200px;
+  margin: 20px auto;
+  padding: 0 20px;
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(500px, 1fr));
+  gap: 25px;
+}
+
+/* Container principal */
+.container {
+  max-width: 800px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+/* Responsividade para cards de notícias */
+@media (max-width: 768px) {
+  .noticia {
+    grid-template-columns: 1fr;
+    gap: 15px;
+  }
+  
+  .imagem-noticia, .imagem-destaque {
+    height: 200px;
+    width: 100%;
+  }
+}
+
+.noticia {
+  background: #181818;
+  color: #fff;
+  border-radius: 12px;
+  overflow: hidden;
+  box-shadow: 0 4px 12px rgba(0,0,0,0.25);
+  transition: transform .25s ease, box-shadow .25s ease;
+  cursor: pointer;
+  padding: 0; /* remove padding antigo */
+  display: block;
+}
+
+.noticia:hover {
+  transform: translateY(-4px);
+  box-shadow: 0 8px 26px rgba(0,0,0,0.35);
+}
+
+.titulo-noticia { 
+  margin: 0 0 10px 0;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+
+.titulo-noticia a { 
+  color: #105ed3; 
+  text-decoration: none;
+  transition: color 0.2s ease;
+}
+
+.titulo-noticia a:hover { 
+  color: #0f0599b6;
+  text-decoration: none;
+}
+
+.imagem-noticia, .imagem-destaque { 
+  width: 100%;
+  height: 400px;
+  border-radius: 6px;
+  display: block;
+  object-fit: cover;
+  transition: transform 0.3s ease;
+}
+
+.imagem-artigo { 
+  width: 75%;
+  max-height: 450px;
+  border-radius: 8px;
+  display: block;
+  object-fit: cover;
+  margin: 20px 200px;
+  box-shadow: 0 2px 12px rgba(0,0,0,0.1);
+}
+
+.imagem-noticia:hover, .imagem-destaque:hover {
+  transform: scale(1.02);
+}
+
+/* Também aplicar regra para imagens não marcadas dentro de .noticia */
+.noticia img {
+  width: 100%;
+  height: 230px;
+  object-fit: cover;
+  display: block;
+}
+.noticia {
+ background: #f1f1f1;
+  color: #fff;
+  font-size: 0.75rem;
+  padding: 4px 10px;
+  border-radius: 4px;
+  font-weight: 600;
+  display: inline-block;
+  margin-bottom: 10px;
+}
+.noticia:hover {
+  transform: translateY(-4px) scale(1.012);
+  box-shadow: 0 8px 32px rgba(0,0,0,0.13);
+  margin: 8px 0;
+  font-weight: 400;
+}
+
+.texto-reescrito { 
+  line-height: 1.7;
+  margin-top: 20px;
+  color: #333;
+  font-size: 1.1rem;
+  max-width: 700px;
+  margin: 0 auto;
+}
+
+.texto-reescrito p { 
+  margin: 0 0 20px 0;
+}
+
+.data { 
+.titulo-noticia {
+  margin: 0 0 4px 0;
+  font-size: 1.4rem;
+  line-height: 1.3;
+  font-weight: 600;
+}
+  font-size: 0.85rem;
+  margin-top: 8px;
+  font-weight: 400;
+  display: inline-block;
+}
+
+.fonte { 
+  color: #105ed3;
+  font-size: 0.85rem;
+  font-weight: 500;
+  display: inline-block;
+  margin-right: 10px;
+}
+
+/* Contenedor para metadados */
+.noticia-meta {
+  display: flex;
+  align-items: center;
+  gap: 8px;
+  margin-top: 8px;
+}
+
+/* Divisor entre fonte e data */
+.noticia-meta .fonte:after {
+  content: "•";
+  color: #767676;
+  margin-left: 10px;
+}
+
+/* Botões */
+.button, .button-green {
+  display: inline-block;
+  margin: 0 auto;
+  padding: 15px 20px;
+  border-radius: 8px;
+  text-decoration: none;
+  color: #fff;
+  background: #0b63c6;
+  border: none;
+  cursor: pointer;
+  font-weight: 550;
+  font-size: 0.85rem;
+  transition: all 0.2s ease;
+  box-shadow: 0 2px 6px rgba(11, 99, 198, 0.2);
+}
+
+.button-green { 
+  background: #105ed3;
+  box-shadow: 0 2px 6px rgba(16, 29, 219, 0.267);
+}
+
+.button:hover, .button-green:hover { 
+  transform: translateY(-1px);
+  box-shadow: 0 4px 12px rgba(11, 99, 198, 0.3);
+}
+
+.button-green:hover {
+  box-shadow: 0 4px 12px rgba(41, 3, 211, 0.411);
+}
+
+.voltar { 
+  display:inline-block; 
+  margin: 10px 0; 
+  text-decoration:none; 
+  color: #fff; background:#3d33d1; 
+  padding:8px 12px; 
+  border-radius:6px }
+
+/* Paginação */
+.pagination { 
+  text-align:center; 
+  margin-top:18px; 
+}
+.pagination a { 
+  display:inline-block; 
+  padding:8px 12px; 
+  margin:0 6px; 
+  background:#3498db; 
+  color:#fff; 
+  text-decoration:none; 
+  border-radius:6px
+ }
+
+/* Grid de campeonatos */
+.campeonatos-grid { display:grid; grid-template-columns: repeat(auto-fill, minmax(260px,1fr)); gap:16px; margin-top:16px }
+.campeonato-card { background:#fff; border:1px solid #eee; padding:12px; border-radius:8px }
+.jogo-tag { font-size:0.8rem; color:#0b63c6; font-weight:600 }
+
+/* Responsividade */
+@media (max-width: 760px) {
+  #titulo-principal { flex-direction: column; align-items: flex-start; gap: 8px; }
+  #titulo-principal ul { flex-wrap: wrap; }
+  .noticias-grid { grid-template-columns: 1fr; }
+  .campeonatos-grid { grid-template-columns: 1fr; }
+}
+
+/* Pequenas utilidades */
+.mensagem-alerta { padding: 16px; background: #fff; border-radius:8px; border:1px solid #f0f0f0 }
+
+/* Loading spinner (reutilizável) */
+.loading-spinner { display:inline-block; width:20px; height:20px; border:3px solid #f3f3f3; border-top:3px solid #3498db; border-radius:50%; animation: spin 1s linear infinite }
+
+@keyframes spin { 0% { transform: rotate(0deg)} 100% { transform: rotate(360deg)} }
+
+/* Links dentro de listas sem estilo */
+ul { margin: 0; padding: 0; }
+
+/* estilização dos títulos H1/H2 padrão */
+h1 { font-size: 3.0rem; color:#111; margin: 20px 15px }
+h2 { font-size: 3.0rem; color:#222; margin: 10px 15px }
+
+/* Campeonatos - Container e título */
+.campeonatos-container {
+  width: 100%;
+  max-width: 1100px;
+  margin: 0 auto;
+  padding: 20px;
+}
+
+.titulo-campeonatos {
+  font-size: 32px;
+  font-weight: 700;
+  margin-bottom: 25px;
+}
+
+/* Filtros */
+.filtros {
+  display: flex;
+  gap: 10px;
+  margin-bottom: 25px;
+  flex-wrap: wrap;
+}
+
+.filtro-btn {
+  padding: 8px 18px;
+  border: 1px solid #ccc;
+  background: #f8f8f8;
+  cursor: pointer;
+  border-radius: 6px;
+  font-weight: 500;
+  transition: background 0.2s ease, color 0.2s ease;
+}
+
+.filtro-btn:hover {
+  background: #e9e9e9;
+}
+
+.filtro-btn.active {
+  background: #0a84ff;
+  color: white;
+  border-color: #0a84ff;
+}
+
+/* Grid de campeonatos */
+.campeonatos-grid {
+  display: grid;
+  grid-template-columns: repeat(auto-fill, minmax(290px, 1fr));
+  gap: 20px;
+}
+
+.campeonato-card {
+  background: white;
+  padding: 18px;
+  border-radius: 10px;
+  border: 1px solid #e6e6e6;
+  box-shadow: 0 2px 6px rgba(0,0,0,0.06);
+  display: flex;
+  flex-direction: column;
+  justify-content: space-between;
+  transition: transform 0.2s ease, box-shadow 0.2s ease;
+}
+
+.campeonato-card:hover {
+  transform: translateY(-2px);
+  box-shadow: 0 4px 12px rgba(0,0,0,0.1);
+}
+
+/* Tag de jogo */
+.jogo-tag {
+  background: #0a84ff;
+  padding: 4px 10px;
+  color: white;
+  font-size: 12px;
+  border-radius: 6px;
+  margin-bottom: 10px;
+  display: inline-block;
+  font-weight: 600;
+}
+
+/* Título do campeonato */
+.camp-title {
+  font-size: 20px;
+  font-weight: 600;
+  margin-bottom: 10px;
+  color: #1f2937;
+  line-height: 1.3;
+}
+
+/* Informações (data, etc) */
+.info p {
+  margin: 4px 0;
+  font-size: 14px;
+  color: #666;
+}
+
+/* Times */
+.times ul {
+  margin: 8px 0 0;
+  padding-left: 18px;
+  font-size: 14px;
+  color: #666;
+}
+
+.times ul li {
+  margin: 4px 0;
+}
+
+/* Link "Ver mais" */
+.ver-mais {
+  margin-top: 15px;
+  display: inline-block;
+  text-decoration: none;
+  font-weight: 60px;
+  color: #0a84ff;
+  transition: color 0.2s ease;
+}
+
+.ver-mais:hover {
+  color: #0058cc;
+  text-decoration: underline;
+}
+
+/* Responsividade para campeonatos */
+@media (max-width: 768px) {
+  .campeonatos-grid {
+    grid-template-columns: repeat(auto-fill, minmax(250px, 1fr));
+  }
+  
+  .titulo-campeonatos {
+    font-size: 24px;
+  }
+  
+  .filtros {
+    flex-direction: row;
+  }
+  
+  .filtro-btn {
+    padding: 6px 14px;
+    font-size: 13px;
+  }
+}
+
+/* fim do stylesheet */

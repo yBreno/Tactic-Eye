@@ -1,0 +1,83 @@
+{% extends "base.html" %}
+
+{% block content %}
+<div class="campeonatos-container">
+
+    <h1 class="titulo-campeonatos">Campeonatos de Games</h1>
+    
+    <!-- Filtros -->
+    <div class="filtros">
+        <button onclick="filtrarJogo('todos', this)" class="filtro-btn active">Todos</button>
+        <button onclick="filtrarJogo('League of Legends', this)" class="filtro-btn">LoL</button>
+        <button onclick="filtrarJogo('CS:GO', this)" class="filtro-btn">CS:GO</button>
+        <button onclick="filtrarJogo('Valorant', this)" class="filtro-btn">Valorant</button>
+    </div>
+    
+    <!-- Grid de Campeonatos -->
+    <div class="campeonatos-grid">
+        {% for camp in campeonatos %}
+        <div class="campeonato-card" data-jogo="{{ camp.jogo }}">
+            
+            <span class="jogo-tag">{{ camp.jogo }}</span>
+            
+            <h2 class="camp-title">{{ camp.nome }}</h2>
+            
+            <div class="info">
+                {% if camp.data %}
+                <p><strong>Data:</strong> {{ camp.data }}</p>
+                {% endif %}
+                
+                {% if camp.premio %}
+                <p><strong>Premiação:</strong> {{ camp.premio }}</p>
+                {% endif %}
+                
+                {% if camp.regiao %}
+                <p><strong>Região:</strong> {{ camp.regiao }}</p>
+                {% endif %}
+                
+                {% if camp.status %}
+                <p><strong>Status:</strong> {{ camp.status }}</p>
+                {% endif %}
+            </div>
+
+            {% if camp.times %}
+            <div class="times">
+                <strong>Times:</strong>
+                <ul>
+                    {% for time in camp.times[:6] %}
+                        <li>{{ time }}</li>
+                    {% endfor %}
+                    {% if camp.times|length > 6 %}
+                        <li>...</li>
+                    {% endif %}
+                </ul>
+            </div>
+            {% endif %}
+
+            <a href="{{ url_for('campeonato_event', slug=camp.slug) }}" class="ver-mais">
+                Ver mais detalhes →
+            </a>
+        </div>
+        {% endfor %}
+    </div>
+</div>
+
+
+<script>
+    function filtrarJogo(jogo, botao) {
+
+        // Marca botão ativo
+        document.querySelectorAll('.filtro-btn').forEach(btn => {
+            btn.classList.remove('active');
+        });
+        botao.classList.add('active');
+
+        // Mostra/oculta cards
+        document.querySelectorAll('.campeonato-card').forEach(card => {
+            const game = card.dataset.jogo;
+            card.style.display = (jogo === 'todos' || game === jogo) ? 'block' : 'none';
+        });
+    }
+</script>
+
+{% endblock %}

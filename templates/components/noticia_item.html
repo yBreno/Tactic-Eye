@@ -1,0 +1,35 @@
+<article class="noticia" role="article" aria-labelledby="titulo-{{ noticia.id }}">
+  <div class="thumb">
+    {% if noticia.imagem_principal %}
+      <a href="{{ url_for('ver_noticia') }}?url={{ noticia.link_encoded }}">
+        <img src="{{ noticia.imagem_principal }}" alt="{{ noticia.titulo }}" class="imagem-noticia" />
+      </a>
+    {% endif %}
+  </div>
+
+  <div class="noticia-conteudo">
+    <h2 id="titulo-{{ noticia.id }}" class="titulo-noticia">
+      <a href="{{ url_for('ver_noticia') }}?url={{ noticia.link_encoded }}">{{ noticia.titulo }}</a>
+    </h2>
+
+    <div class="noticia-meta">
+      <span class="fonte">Fonte: {{ noticia.feed.split('/')[2] if noticia.feed else '' }}</span>
+      <span class="data">{{ noticia.publicado or 'Data não disponível' }}</span>
+    </div>
+
+    {% set resumo_curto = noticia.resumo[:150] if noticia.resumo else (noticia.texto[:150] if noticia.texto) %}
+    {% if resumo_curto %}
+      <p class="resumo">{{ resumo_curto }}{% if resumo_curto|length >= 150 %}...{% endif %}
+        {% if noticia.subitens %}
+          <ul>
+            {% for sub in noticia.subitens %}
+              <li>{{ sub }}</li>
+            {% endfor %}
+          </ul>
+        {% endif %}
+      </p>
+    {% endif %}
+
+    <a href="{{ url_for('ver_noticia') }}?url={{ noticia.link_encoded }}" class="button">Ler mais</a>
+  </div>
+</article>

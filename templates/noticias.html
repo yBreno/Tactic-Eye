@@ -1,0 +1,36 @@
+<!DOCTYPE html>
+<html>
+<head>
+    <title>Últimas Notícias - Web Crawler</title>
+    <link rel="stylesheet" href="{{ url_for('static', filename='css/style.css') }}">
+</head>
+<body>
+    <div id="titulo-principal">
+        <h1>
+            <a href="{{ url_for('index') }}" class="voltar">TACTIC EYE</a>
+        </h1>
+        <ul>
+            <li><a href="{{ url_for('noticias') }}">Notícias</a></li>
+            <li><a href="{{ url_for('campeonatos') }}">Campeonatos</a></li>
+           
+        </ul>
+    </div>
+
+    <div class="container">
+        <h1>Últimas Notícias</h1>
+        {% for noticia in noticias %}
+            <div class="noticia">
+                <h2><a href="{{ noticia.link }}" target="_blank">{{ noticia.titulo }}</a></h2>
+                <div class="data">Publicado em: {{ noticia.publicado or 'Data não disponível' }}</div>
+                {% if noticia.imagem_principal %}
+                    <img src="{{ noticia.imagem_principal }}" alt="{{ noticia.titulo }}" class="imagem-noticia">
+                {% endif %}
+                {% if noticia.resumo %}
+                    <div class="resumo">{{ noticia.resumo }}</div>
+                {% endif %}
+            </div>
+        {% endfor %}
+    </div>
+</body>
+
+</html>

@@ -1,0 +1,745 @@
+{
+  "timestamp": "2025-11-02T12:55:01.010655",
+  "campeonatos": [
+    {
+      "jogo": "Valorant",
+      "nome": "China Evolution Series: Act 3",
+      "data": "Aug 28—Sep 7",
+      "teams": [
+        "All Gamers",
+        "Guangzhou Huadu Bilibili Gaming",
+        "EDward Gaming",
+        "FunPlus Phoenix",
+        "JD Mall JDG Esports",
+        "Nova Esports",
+        "Titan Esports Club",
+        "Trace Esports",
+        "TYLOO",
+        "Wolves Esports",
+        "Dragon Ranger Gaming",
+        "Xi Lai Gaming"
+      ],
+      "link": "/campeonatos/event/china-evolution-series-act-3",
+      "slug": "china-evolution-series-act-3",
+      "source_link": "https://www.vlr.gg/event/2590/china-evolution-series-act-3"
+    },
+    {
+      "jogo": "eSports",
+      "nome": "Persia departs Nongshim RedForce",
+      "data": "Fri, 31 Oct 2025 18:22:53 -03",
+      "resumo": "The veteran presence of the squad departs after spending a year in VCT with the Sin Prisa core.",
+      "link": "/campeonatos/event/persia-departs-nongshim-redforce",
+      "slug": "persia-departs-nongshim-redforce",
+      "source_link": "https://www.vlr.gg/580686/persia-departs-nongshim-redforce"
+    },
+    {
+      "jogo": "eSports",
+      "nome": "100 Thieves bid farewell to eeiu",
+      "data": "Fri, 31 Oct 2025 19:55:42 -03",
+      "resumo": "eeiu officially departs 100 Thieves after two seasons.",
+      "link": "/campeonatos/event/100-thieves-bid-farewell-to-eeiu",
+      "slug": "100-thieves-bid-farewell-to-eeiu",
+      "source_link": "https://www.vlr.gg/580703/100-thieves-bid-farewell-to-eeiu"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": "VCT 2026: Americas Kickoff",
+      "data": "Jan 2—TBD",
+      "teams": [
+        "100 Thieves",
+        "Cloud9",
+        "Evil Geniuses",
+        "FURIA",
+        "KRÜ Esports",
+        "LEVIATÁN",
+        "LOUD",
+        "MIBR",
+        "NRG",
+        "Sentinels",
+        "G2 Esports",
+        "ENVY"
+      ],
+      "link": "/campeonatos/event/vct-2026-americas-kickoff",
+      "slug": "vct-2026-americas-kickoff",
+      "source_link": "https://www.vlr.gg/event/2682/vct-2026-americas-kickoff"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": "VCT 2026: Pacific Kickoff",
+      "data": "Jan 2—TBD",
+      "teams": [
+        "DetonatioN FocusMe",
+        "DRX",
+        "Gen.G",
+        "Global Esports",
+        "Paper Rex",
+        "Rex Regum Qeon",
+        "T1",
+        "TALON",
+        "Team Secret",
+        "ZETA DIVISION",
+        "SLT Seongnam",
+        "Nongshim RedForce"
+      ],
+      "link": "/campeonatos/event/vct-2026-pacific-kickoff",
+      "slug": "vct-2026-pacific-kickoff",
+      "source_link": "https://www.vlr.gg/event/2683/vct-2026-pacific-kickoff"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": "VCT 2026: EMEA Kickoff",
+      "data": "Jan 2—TBD",
+      "teams": [
+        "BBL Esports",
+        "FNATIC",
+        "FUT Esports",
+        "Gentle Mates",
+        "GIANTX",
+        "Karmine Corp",
+        "Natus Vincere",
+        "Team Heretics",
+        "Team Liquid",
+        "Team Vitality",
+        "ULF Esports",
+        "BBL PCIFIC"
+      ],
+      "link": "/campeonatos/event/vct-2026-emea-kickoff",
+      "slug": "vct-2026-emea-kickoff",
+      "source_link": "https://www.vlr.gg/event/2684/vct-2026-emea-kickoff"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": "VCT 2026: China Kickoff",
+      "data": "Jan 2—TBD",
+      "teams": [
+        "All Gamers",
+        "Guangzhou Huadu Bilibili Gaming",
+        "EDward Gaming",
+        "FunPlus Phoenix",
+        "JD Mall JDG Esports",
+        "Nova Esports",
+        "Wuxi Titan Esports Club",
+        "Trace Esports",
+        "TYLOO",
+        "Wolves Esports",
+        "Xi Lai Gaming",
+        "Dragon Ranger Gaming"
+      ],
+      "link": "/campeonatos/event/vct-2026-china-kickoff",
+      "slug": "vct-2026-china-kickoff",
+      "source_link": "https://www.vlr.gg/event/2685/vct-2026-china-kickoff"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": "VCT 2025: Pacific Stage 2",
+      "data": "Jul 15—Aug 31",
+      "teams": [
+        "DRX",
+        "Rex Regum Qeon",
+        "Nongshim RedForce",
+        "Gen.G",
+        "Paper Rex",
+        "TALON",
+        "T1",
+        "DetonatioN FocusMe"
+      ],
+      "link": "/campeonatos/event/vct-2025-pacific-stage-2",
+      "slug": "vct-2025-pacific-stage-2",
+      "source_link": "https://www.vlr.gg/event/2500/vct-2025-pacific-stage-2"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": "VCT 2025: EMEA Stage 2",
+      "data": "Jul 16—Aug 31",
+      "teams": [
+        "Team Heretics",
+        "GIANTX",
+        "BBL Esports",
+        "Team Vitality",
+        "Team Liquid",
+        "FNATIC",
+        "Natus Vincere",
+        "Karmine Corp"
+      ],
+      "link": "/campeonatos/event/vct-2025-emea-stage-2",
+      "slug": "vct-2025-emea-stage-2",
+      "source_link": "https://www.vlr.gg/event/2498/vct-2025-emea-stage-2"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": "VCT 2025: Americas Stage 2",
+      "data": "Jul 18—Sep 1",
+      "teams": [
+        "Sentinels",
+        "G2 Esports",
+        "Cloud9",
+        "Evil Geniuses",
+        "NRG",
+        "LEVIATÁN",
+        "100 Thieves",
+        "VISA KRÜ"
+      ],
+      "link": "/campeonatos/event/vct-2025-americas-stage-2",
+      "slug": "vct-2025-americas-stage-2",
+      "source_link": "https://www.vlr.gg/event/2501/vct-2025-americas-stage-2"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": "VCT 2025: China Stage 2",
+      "data": "Jul 3—Aug 24",
+      "teams": [
+        "Guangzhou Huadu Bilibili Gaming",
+        "EDward Gaming",
+        "TYLOO",
+        "Trace Esports",
+        "Xi Lai Gaming",
+        "All Gamers",
+        "Dragon Ranger Gaming",
+        "FunPlus Phoenix"
+      ],
+      "link": "/campeonatos/event/vct-2025-china-stage-2",
+      "slug": "vct-2025-china-stage-2",
+      "source_link": "https://www.vlr.gg/event/2499/vct-2025-china-stage-2"
+    },
+    {
+      "jogo": "eSports",
+      "nome": "zekken departs Sentinels after three years of service",
+      "data": "Sat, 01 Nov 2025 13:07:37 -03",
+      "resumo": "After three years in SEN City, zekken is off to find a new home.",
+      "link": "/campeonatos/event/zekken-departs-sentinels-after-three-years-of-service",
+      "slug": "zekken-departs-sentinels-after-three-years-of-service",
+      "source_link": "https://www.vlr.gg/580915/zekken-departs-sentinels-after-three-years-of-service"
+    },
+    {
+      "jogo": "eSports",
+      "nome": "Fatal Fury director says Chun Li’s inclusion in City of the Wolves made SNK nervous and nostalgic",
+      "data": "Sat, 01 Nov 2025 15:00:00 GMT",
+      "resumo": "Fatal Fury director Hayato Konya told Dexerto he was “nervous” about bringing Chun-Li into City of the Wolves.",
+      "link": "/campeonatos/event/fatal-fury-director-says-chun-li-s-inclusion-in-city-of-the-wolves-made-snk-nervous-and-nostalgic",
+      "slug": "fatal-fury-director-says-chun-li-s-inclusion-in-city-of-the-wolves-made-snk-nervous-and-nostalgic",
+      "source_link": "https://www.dexerto.com/gaming/chun-li-cotw-developer-interview-3277516/"
+    },
+    {
+      "jogo": "eSports",
+      "nome": "PewDiePie builds his own AI chat UI with a “council” of bots that vote on answers",
+      "data": "Sat, 01 Nov 2025 15:33:02 GMT",
+      "resumo": "PewDiePie has built his own AI chat interface powered by 10 GPUs — complete with search, memory, RAG, and a “council” of bots that vote on answers.",
+      "link": "/campeonatos/event/pewdiepie-builds-his-own-ai-chat-ui-with-a-council-of-bots-that-vote-on-answers",
+      "slug": "pewdiepie-builds-his-own-ai-chat-ui-with-a-council-of-bots-that-vote-on-answers",
+      "source_link": "https://www.dexerto.com/youtube/pewdiepie-builds-his-own-ai-chat-ui-with-a-council-of-bots-that-vote-on-answers-3278189/"
+    },
+    {
+      "jogo": "eSports",
+      "nome": "Destiny 2 Aureus Neutralizer god roll for PvE & PvP",
+      "data": "Sat, 01 Nov 2025 16:15:45 GMT",
+      "resumo": "Destiny 2’s Aureus Neutralizer Hand Cannon has god rolls so strong that it has dominated PvP since its debut.",
+      "link": "/campeonatos/event/destiny-2-aureus-neutralizer-god-roll-for-pve-pvp",
+      "slug": "destiny-2-aureus-neutralizer-god-roll-for-pve-pvp",
+      "source_link": "https://www.dexerto.com/destiny/destiny-2-aureus-neutralizer-god-roll-for-pve-pvp-3278180/"
+    },
+    {
+      "jogo": "eSports",
+      "nome": "Sentinels begin anew with 2026 roster",
+      "data": "Sat, 01 Nov 2025 18:23:01 -03",
+      "resumo": "Sentinels is back in business with an all new roster featuring former Cubert Academy players.",
+      "link": "/campeonatos/event/sentinels-begin-anew-with-2026-roster",
+      "slug": "sentinels-begin-anew-with-2026-roster",
+      "source_link": "https://www.vlr.gg/580992/sentinels-begin-anew-with-2026-roster"
+    },
+    {
+      "jogo": "eSports",
+      "nome": "IRS lawyer starts hot dog stand during shutdown, says he’s “never felt so free and fulfilled”",
+      "data": "Sat, 01 Nov 2025 18:31:13 GMT",
+      "resumo": "IRS lawyer Isaac Stein was furloughed during the government shutdown and turned to his new hot dog stand, saying he’s “never felt so free and fulfilled.”",
+      "link": "/campeonatos/event/irs-lawyer-starts-hot-dog-stand-during-shutdown-says-he-s-never-felt-so-free-and-fulfilled",
+      "slug": "irs-lawyer-starts-hot-dog-stand-during-shutdown-says-he-s-never-felt-so-free-and-fulfilled",
+      "source_link": "https://www.dexerto.com/tiktok/irs-lawyer-starts-hot-dog-stand-during-shutdown-says-hes-never-felt-so-free-and-fulfilled-3278216/"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": "Valorant Champions 2025",
+      "data": "Sep 12—Oct 5",
+      "teams": [
+        "Paper Rex",
+        "GIANTX",
+        "FNATIC",
+        "MIBR",
+        "NRG",
+        "DRX",
+        "Team Heretics",
+        "G2 Esports"
+      ],
+      "link": "/campeonatos/event/valorant-champions-2025",
+      "slug": "valorant-champions-2025",
+      "source_link": "https://www.vlr.gg/event/2283/valorant-champions-2025"
+    },
+    {
+      "jogo": "eSports",
+      "nome": "High school students exempted from history exam after being taught wrong subject",
+      "data": "Sun, 02 Nov 2025 12:19:59 GMT",
+      "resumo": "High school students were exempted from their final history exam after teachers spent a year teaching them about the wrong Roman emperor.",
+      "link": "/campeonatos/event/high-school-students-exempted-from-history-exam-after-being-taught-wrong-subject",
+      "slug": "high-school-students-exempted-from-history-exam-after-being-taught-wrong-subject",
+      "source_link": "https://www.dexerto.com/entertainment/high-school-students-exempted-from-history-exam-after-being-taught-wrong-subject-3278232/"
+    },
+    {
+      "jogo": "eSports",
+      "nome": "Anderzz on Patch 11.08, anxiety around lack of gun changes",
+      "data": "Thu, 30 Oct 2025 20:06:33 -03",
+      "resumo": "Former G2 Esports, FNATIC, and VersionX coach Anderzz talks about Patch 11.08, and how it could significantly change Valorant esports.",
+      "link": "/campeonatos/event/anderzz-on-patch-11-08-anxiety-around-lack-of-gun-changes",
+      "slug": "anderzz-on-patch-11-08-anxiety-around-lack-of-gun-changes",
+      "source_link": "https://www.vlr.gg/580259/anderzz-on-patch-11-08-anxiety-around-lack-of-gun-changes"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    },
+    {
+      "jogo": "Valorant",
+      "nome": null,
+      "data": null,
+      "regiao": null,
+      "status": null,
+      "link": "/campeonatos/event/20251102125501",
+      "slug": "20251102125501"
+    }
+  ]
+}

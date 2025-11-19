@@ -1,0 +1,43 @@
+{% extends "base.html" %}
+
+{% block content %}
+
+
+<div class="campeonato-detalhe" style="max-width:900px;margin:20px auto;padding:20px;background:#fff;border-radius:8px;">
+    <a href="/campeonatos" style="text-decoration:none;color:#3498db;">← Voltar aos campeonatos</a>
+    <h1 style="margin-top:10px;">{{ campeonato.nome }}</h1>
+    <p><strong>Jogo:</strong> {{ campeonato.jogo }}</p>
+    {% if campeonato.data %}
+    <p><strong>Data:</strong> {{ campeonato.data }}</p>
+    {% endif %}
+    {% if campeonato.regiao %}
+    <p><strong>Região:</strong> {{ campeonato.regiao }}</p>
+    {% endif %}
+    {% if campeonato.premio %}
+    <p><strong>Premiação:</strong> {{ campeonato.premio }}</p>
+    {% endif %}
+    {% if campeonato.status %}
+    <p><strong>Status:</strong> {{ campeonato.status }}</p>
+    {% endif %}
+
+    {% if campeonato.resumo %}
+    <h3>Resumo</h3>
+    <p>{{ campeonato.resumo }}</p>
+    {% endif %}
+
+    {% if campeonato.teams or campeonato.times %}
+    <h3>Times participantes</h3>
+    <ul>
+        {% for t in (campeonato.teams or campeonato.times) %}
+        <li>{{ t }}</li>
+        {% endfor %}
+    </ul>
+    {% else %}
+    <p><em>Times não disponíveis.</em></p>
+    {% endif %}
+
+    {% if campeonato.source_link %}
+    <p style="margin-top:20px;font-size:0.9em;color:#666;">Fonte externa disponível — <a href="{{ campeonato.source_link }}" target="_blank" rel="noopener">abrir em nova aba</a> (opcional)</p>
+    {% endif %}
+</div>
+{% endblock %}
