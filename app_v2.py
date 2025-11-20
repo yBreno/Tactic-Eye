@@ -968,4 +968,4 @@ if __name__ == '__main__':
     # Inicializa o banco de dados
     init_db()
     print("Servidor iniciando... Acesse http://127.0.0.1:5000")
-    app.run(debug=True, host='0.0.0.0', port=5000)
+    app.run(host="0.0.0.0", port=10000)
