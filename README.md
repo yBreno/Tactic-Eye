@@ -1,6 +1,9 @@
  ![](Logo.jpg)
 
+ ## https://tactic-eye.onrender.com/
+ 
  **Projeto se encontra no branch master**
+ 
 
  
   O Tactic Eye é um projeto de desenvolvimento de um web crawler especializado em notícias do cenário competitivo de Valorant e no mundo dos jogos. Seu objetivo é automatizar a coleta de informações atualizadas sobre campeonatos, mudanças de line-ups, transferências, resultados, anúncios oficiais e movimentações relevantes no ecossistema do jogo e no cenario de jogos digitais e tecnologia.
