@@ -4,3 +4,4 @@ feedparser
 beautifulsoup4
 lxml
 uuid        
+gunicorn
