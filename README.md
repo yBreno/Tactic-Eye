@@ -1,6 +1,14 @@
  ![](Logo.jpg)
 
+ **Link do PITCH do projeto**
+ ## https://www.youtube.com/watch?v=7J2ywJFWDjk
+ 
+ ---
+ 
+ **Link do site WEBCRAWLER**
  ## https://tactic-eye.onrender.com/
+ 
+ ---
  
  **Projeto se encontra no branch master**
  ## https://github.com/yBreno/Tactic-Eye/tree/master
